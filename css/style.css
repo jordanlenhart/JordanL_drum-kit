@@ -1,6 +1,6 @@
 html {
   font-size: 10px;
-  background: url("./images/background.jpg") bottom center;
+  background: url("/images/background.jpg") bottom center;
   background-size: cover;
 }
 
@@ -25,7 +25,7 @@ html {
   margin: 1rem;
   font-size: 1.5rem;
   padding: 1rem 0.5rem;
-  transition: all 0.07s ease;
+  transition: all .07s;
   width: 10rem;
   text-align: center;
   color: white;
