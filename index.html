@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Drum Kit</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="https://fav.farm/🔥" />
+</head>
+<body>
+  <!-- Slideshow Container -->
+  <div class="slideshow-container">
+
+    <!-- Drums -->
+    <div class="mySlides fade">
+      <h1>Drum Stuff</h1>
+      <div class="keys">
+        <div data-key="65" class="key">
+          <kbd>A</kbd>
+          <span class="sound">clap</span>
+        </div>
+        <div data-key="83" class="key">
+          <kbd>S</kbd>
+          <span class="sound">hihat</span>
+        </div>
+        <div data-key="68" class="key">
+          <kbd>D</kbd>
+          <span class="sound">kick</span>
+        </div>
+        <div data-key="70" class="key">
+          <kbd>F</kbd>
+          <span class="sound">openhat</span>
+        </div>
+        <div data-key="71" class="key">
+          <kbd>G</kbd>
+          <span class="sound">boom</span>
+        </div>
+        <div data-key="72" class="key">
+          <kbd>H</kbd>
+          <span class="sound">ride</span>
+        </div>
+        <div data-key="74" class="key">
+          <kbd>J</kbd>
+          <span class="sound">snare</span>
+        </div>
+        <div data-key="75" class="key">
+          <kbd>K</kbd>
+          <span class="sound">tom</span>
+        </div>
+        <div data-key="76" class="key">
+          <kbd>L</kbd>
+          <span class="sound">tink</span>
+        </div>
+      </div>
+
+    <!-- Drums Container Closing Tag -->
+    </div> 
+
+    <!-- Guitar -->
+    <div class="mySlides fade">
+      <h1>Guitar Stuff</h1>
+      <div class="keys">
+        <div data-string="65" class="key">
+          <kbd>A</kbd>
+          <span class="sound">1st String E</span>
+        </div>
+        <div data-string="83" class="key">
+          <kbd>S</kbd>
+          <span class="sound">2nd String B</span>
+        </div>
+        <div data-string="68" class="key">
+          <kbd>D</kbd>
+          <span class="sound">3rd String G</span>
+        </div>
+        <div data-string="70" class="key">
+          <kbd>F</kbd>
+          <span class="sound">4th String D</span>
+        </div>
+        <div data-string="71" class="key">
+          <kbd>G</kbd>
+          <span class="sound">5th String A</span>
+        </div>
+        <div data-string="72" class="key">
+          <kbd>H</kbd>
+          <span class="sound">6th String E</span>
+        </div>
+        <div data-string="74" class="key">
+          <kbd>J</kbd>
+          <span class="sound">C String</span>
+        </div>
+        <div data-string="75" class="key">
+          <kbd>K</kbd>
+          <span class="sound">D String</span>
+        </div>
+        <div data-string="76" class="key">
+          <kbd>L</kbd>
+          <span class="sound">D Minor</span>
+        </div>
+      </div>
+
+    <!-- Guitar Container Closing Tag -->
+    </div> 
+    
+    <!-- Next and previous buttons -->
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+</div>
+
+  <!-- Slideshow Container Closing Tag -->
+  </div>
+
+  <!-- Drum Audio  -->
+  <div>
+    <audio data-key="65" src="sounds/clap.wav"></audio>
+    <audio data-key="83" src="sounds/hihat.wav"></audio>
+    <audio data-key="68" src="sounds/kick.wav"></audio>
+    <audio data-key="70" src="sounds/openhat.wav"></audio>
+    <audio data-key="71" src="sounds/boom.wav"></audio>
+    <audio data-key="72" src="sounds/ride.wav"></audio>
+    <audio data-key="74" src="sounds/snare.wav"></audio>
+    <audio data-key="75" src="sounds/tom.wav"></audio>
+    <audio data-key="76" src="sounds/tink.wav"></audio>
+  </div>
+
+  <!-- Guitar Audio  -->
+  <div>
+    <audio data-string="65" src="sounds/1st_String_E_64kb.wav"></audio>
+    <audio data-string="83" src="sounds/2nd_String_B__64kb.wav"></audio>
+    <audio data-string="68" src="sounds/3rd_String_G_64kb.wav"></audio>
+    <audio data-string="70" src="sounds/4th_String_D_64kb.wav"></audio>
+    <audio data-string="71" src="sounds/5th_String_A_64kb.wav"></audio>
+    <audio data-string="72" src="sounds/6th_String_E_64kb.wav"></audio>
+    <audio data-string="74" src="sounds/C_64kb.wav"></audio>
+    <audio data-string="75" src="sounds/D_64kb.wav"></audio>
+    <audio data-string="76" src="sounds/Dm_64kb.wav"></audio>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
