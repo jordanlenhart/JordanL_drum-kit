@@ -1,18 +1,14 @@
 let slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
-//
-
-// let prevArrow = document.querySelector(`.prev[data-prev="${190.keyCode}"`)
-// let nextArrow = document.querySelector(`.next[data-next="${188.keyCode}"`)
+// Next/previous arrow controls
 
 function plusSlides(n) {
   showSlides(slideIndex += n);
   console.log(`n is`, n)
 }
 
-// Thumbnail image controls
+// Thumbnail controls
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
@@ -46,17 +42,19 @@ function detectArrows(e) {
   }
 }
 
+
+// Audio/Key controls 
 function playSound(e) {
     let audio;
     let note;
 
     if (slideIndex === 1) {
-        audio = document.querySelector(`audio[data-key="${e.keyCode}"]`)
-        note = document.querySelector(`.key[data-key="${e.keyCode}"]`)
+        audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+        note = document.querySelector(`.key[data-key="${e.keyCode}"]`);
     }
     if (slideIndex === 2) {
-        audio = document.querySelector(`audio[data=string="${e.keyCode}"]`)
-        note = document.querySelector(`.key[data-string="${e.keyCode}"]`)
+        audio = document.querySelector(`audio[data-string="${e.keyCode}"]`);
+        note = document.querySelector(`.key[data-string="${e.keyCode}"]`);
     }
     
 
